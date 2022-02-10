@@ -6,7 +6,6 @@ import Statistic from './Statistic/Statistic';
 import './Feedback.module.css';
 
 
-
 class Feedback extends Component{
     state = {
         good: 0,

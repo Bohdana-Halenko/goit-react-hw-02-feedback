@@ -1,3 +1,4 @@
+import propTypes from 'prop-types';
 // import s from './Statistic.module.css';
 
 const Statistic = ({
@@ -25,3 +26,9 @@ const Statistic = ({
 );
 
 export default Statistic;
+
+Statistic.propTypes = {
+    // options: propTypes.number,
+    onCountTotalFeedback: propTypes.number,
+    onCountPercentagePositiveFeedback: propTypes.number,
+};
