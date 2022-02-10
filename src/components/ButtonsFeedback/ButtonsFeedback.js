@@ -1,12 +1,12 @@
 import propTypes from 'prop-types';
-// import s from './ButtonsFeedback.module.css';
+import s from './ButtonsFeedback.module.css';
 
 const ButtonsFeedback = ({ options, onCountFeedback }) => (
-    <ul className='wrap'>
+    <ul className={s.wrap}>
         {options.map(option => (
             <li key={option}>
                 <button
-                    className='button'
+                    className={s.button}
                     type='button'
                     name={option}
                     onClick={() => onCountFeedback(option)}
