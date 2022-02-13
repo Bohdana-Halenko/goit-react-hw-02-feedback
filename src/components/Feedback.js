@@ -15,24 +15,6 @@ class Feedback extends Component{
     countFeedback = button => {
         this.setState({ [button]: this.state[button] + 1 });
     };
-    // Можно прописать так:
-    // countGood = () => {
-    //     this.setState(prevState => ({
-    //     neutral: prevState.good + 1,
-    //     }));
-    // };
-
-    // countNeutral = () => {
-    //     this.setState(prevState => ({
-    //     neutral: prevState.neutral + 1,
-    //     }));
-    // };
-
-    // countBad = () => {
-    //     this.setState(prevState => ({
-    //     neutral: prevState.bad + 1,
-    //     }));
-    // };
 
     countTotalFeedback = () => {
         const { good, neutral, bad } = this.state;
